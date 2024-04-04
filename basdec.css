@@ -37,6 +37,7 @@ li a{  color: white;
 .warning h1 {
   font: small-caps bold 1.2rem sans-serif;
   text-align: center;
+  color: black;
 }
 
 nav {
