@@ -27,8 +27,8 @@ li a{  color: white;
 }
 
 .warning {
-  border: 10px ridge #f00;
-  background-color: #ff0;
+  border: 10px ridge #956;
+  background-color: #003;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
