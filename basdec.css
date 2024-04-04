@@ -22,6 +22,11 @@ li a{  color: white;
   font-family: 'Gidole', sans-serif;
 }
 
+nav-links a{  color: white;
+  font-family: 'Gidole', sans-serif;
+}
+
+
 html {
   background-image: url(images/background.jpg);
   background-repeat: no-repeat;
