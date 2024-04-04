@@ -26,6 +26,10 @@ li a{  color: white;
   font-family: 'Gidole', sans-serif;
 }
 
+nav {
+    text-align: center;
+    position: sticky;
+}
 
 html {
   background: #000;
