@@ -28,14 +28,15 @@
             
             <div class="content"></div>
 
-            <script type="module">
+            <script type="module" type="text/javascript">
                 import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
                 console.log("[Owlory] Trying to render NEWS...")
 
-
-                fetch("README.md").then((res) => res.text()).then((text) => {
-                    document.getElementById('content').innerHTML = marked.parse(text);
-                }).catch((e) => console.error(e));
+                window.onload = function(){
+                    fetch("README.md").then((res) => res.text()).then((text) => {
+                        document.getElementById('content').innerHTML = marked.parse(text);
+                    }).catch((e) => console.error(e));
+                }
         
     </script>
             
