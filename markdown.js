@@ -11,4 +11,4 @@ fetch("news/" + i + "n.md").then((res) => res.text()).then((text) => {
 
 console.log("[Owlory] Check " + i + ' News Container')
 
-i++
+//i++
