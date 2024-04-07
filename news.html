@@ -27,6 +27,17 @@
         <section>
             
             <div class="content"></div>
+
+            <script type="module">
+                import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+                console.log("[Owlory] Trying to render NEWS...")
+
+
+                fetch("README.md").then((res) => res.text()).then((text) => {
+                    document.getElementById('content').innerHTML = marked.parse(text);
+                }).catch((e) => console.error(e));
+        
+    </script>
             
         </section>
     </main>
@@ -43,16 +54,7 @@
         </div>
     </footer>
     
-    <script type="module">
-        import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
-        console.log("[Owlory] Trying to render NEWS...")
-
-
-        fetch("README.md").then((res) => res.text()).then((text) => {
-            document.getElementById('content').innerHTML = marked.parse(text);
-        }).catch((e) => console.error(e));
-        
-    </script>
+    
     
 </body>
 </html>
