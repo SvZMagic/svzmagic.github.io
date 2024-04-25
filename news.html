@@ -26,7 +26,20 @@
     <main>
         <section>
             
-            <div class="content1" id="content1"><p>Пожалуйста, подождите! Новости загружаются...<br>Если вы отключили JavaScript в настройках браузера, новости у вас не загрузятся!</p></div>
+            <div class="content1" id="content1">
+                <!--<p>Пожалуйста, подождите! Новости загружаются...<br>Если вы отключили JavaScript в настройках браузера, новости у вас не загрузятся!</p></div>-->
+                <div class="loader" id="loader"> 
+                  <svg version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="100px" y="100px" viewBox="0 0 100 100" xml:space="preserve">
+                    <circle fill="none" stroke="blue" stroke-width="0,25" cx="93" cy="50" r="5" stroke-dasharray="300" stroke-linecap="round" transform="rotate(-90 ) translate(-100 0)" >
+                      <animate attributeName="stroke-dashoffset" values="720;0" dur="2s" repeatCount="indefinite"></animate>
+                    </circle>
+                    <circle fill="none" stroke="green" stroke-width="0,5" cx="93" cy="50" r="1" stroke-dasharray="300" stroke-linecap="round" transform="rotate(-90 ) translate(-100 0)" >
+                      <animate attributeName="stroke-dashoffset" values="360;0" dur="1s" repeatCount="indefinite"></animate>
+                    </circle>
+                </svg>
+            </div> 
+            
+            
 
             <script type="module" src="markdown.js"></script>
             
